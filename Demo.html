@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Demo</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="Jarosh-DateTime.js"></script>
+    <script type="text/javascript" src="l10n/ru.js"></script>
+    <script>
+        
+        document.title = Jarosh.DateTime().cls;
+        
+        
+        
+        try {
+            alert(Jarosh.DateTime('2016/01/15', 'CHADT', 'Y/m/d').format());
+        }
+        catch(exc) {
+            alert('ERR: ' + exc);
+        }
+        
+        
+        
+        
+        /*
+        //alert(Jarosh.DateTime.ru().daysow());
+        
+        
+        document.write( Jarosh.DateTime(null, 'CHADT').months(function(num, shortened) {
+            var m = [
+                ['-'],
+                ['enero',true],
+                ['febrero'],
+                ['marzo',true],
+                ['abril'],
+                ['mayo',true],
+                ['junio'],
+                ['julio'],
+                ['agosto',true],
+                ['setiembre'],
+                ['octubre'],
+                ['noviembre'],
+                ['diciembre']
+            ];
+            return (shortened!==true || (typeof m[num][1] !== 'undefined') && m[num][1]===true)
+                ? m[num][0]
+                : m[num][0].substring(0,3) + '.';
+        }).format('M O P T Z U') );
+        
+        
+        document.write('<br/><br/><br/>');
+        
+        
+        document.write( Jarosh.DateTime('20151115000000').format(Jarosh.DateTime.FORMAT) );
+        
+        
+        document.write('<br/><br/><br/>');
+        
+        
+        document.write( Jarosh.DateTime().diff('19700101000000')
+            .setFormatChar('s', Jarosh.DateTime.ru().period.s)
+            .setFormatChar('i', Jarosh.DateTime.ru().period.i)
+            .setFormatChar('h', Jarosh.DateTime.ru().period.h)
+            .setFormatChar('d', Jarosh.DateTime.ru().period.d)
+            .setFormatChar('m', Jarosh.DateTime.ru().period.m)
+            .setFormatChar('y', Jarosh.DateTime.ru().period.y)
+            .format('%y #y %m #m %d #d %h #h %i #i %s #s назад') 
+        );
+        
+        
+        document.write('<br/><br/><br/>');
+        
+        
+        document.write( Jarosh.DateTime().diff('00010101000000')
+            .setFormatChar('s', Jarosh.DateTime.ru().period.s)
+            .setFormatChar('i', Jarosh.DateTime.ru().period.i)
+            .setFormatChar('h', Jarosh.DateTime.ru().period.h)
+            .setFormatChar('d', Jarosh.DateTime.ru().period.d)
+            .setFormatChar('m', Jarosh.DateTime.ru().period.m)
+            .setFormatChar('y', Jarosh.DateTime.ru().period.y)
+            .format('%y #y %m #m %d #d %h #h %i #i %s #s назад') 
+        );
+        
+        
+        document.write('<br/><br/><br/>');
+        
+        
+        document.write( JSON.stringify( Jarosh.DateTime().diff('19700101000000')
+            .setFormatChar('s', Jarosh.DateTime.ru().period.s)
+            .setFormatChar('i', Jarosh.DateTime.ru().period.i)
+            .setFormatChar('h', Jarosh.DateTime.ru().period.h)
+            .setFormatChar('d', Jarosh.DateTime.ru().period.d)
+            .setFormatChar('m', Jarosh.DateTime.ru().period.m)
+            .setFormatChar('y', Jarosh.DateTime.ru().period.y)
+            .format(['%y #y', '%m #m', '%d #d', '%h #h', '%i #i', '%s #s'], function() {
+                
+            })
+        ) );
+        */
+        
+    </script>
+  </head>
+  <body>
+      
+  </body>
+</html>

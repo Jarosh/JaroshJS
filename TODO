@@ -1,0 +1,14 @@
+Implement remaining DateTime format characters:
+    S - English ordinal suffix for the day of the month, 2 characters:
+        st, nd, rd or th;
+    W - ISO-8601 week number of year, weeks starting on Monday;
+    o - ISO-8601 year number. This has the same value as Y, except that
+        if the ISO week number (W) belongs to the previous or next year,
+        that year is used instead;
+    B - Swatch Internet time: 000 through 999;
+    e - Timezone identifier: UTC, GMT, Atlantic/Azores;
+    I - (capital i) - Whether or not the date is in daylight saving time:
+        1 if Daylight Saving Time, 0 otherwise;
+    c - shortcut for FORMAT_ISO8601;
+    r - shortcut for FORMAT_RFC2822;
+
